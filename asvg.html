@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="icon" href='favicon.ico' type='image/x-icon'/>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber").value;
+  document.getElementById("logo").height = x;
+}
+
+function bordering() {
+	var b = document.getElementById("myBorder").value;
+	document.getElementById("logo").style.padding=  b + "px";
+}
+function changeSrcImg(filename) {
+  document.getElementById("logo").src=filename;
+}
+
+function start(){
+	imagesize();
+	convertArray();
+	setpath();
+}
+
+
+
+var filename = {
+	fname : "Yuki SVG ",
+	totalfilewidth : "404 ",
+	totalfileheight : "270 ",
+	widthNoBorder : "384 ",
+	heightNoBorder : "250 ",
+	filetype : ".png",
+	fullfilename : function() {
+		return this.fname + this.totalfilewidth + this.totalfileheight + this.widthNoBorder + this.heightNoBorder + this.filetype;
+	}
+};
+
+
+var filepath = {	
+
+	beginningpath : "/Users/Monika/SVN/november",
+	filetype : "png",
+	fullpath : function() {
+		return this.beginningpath + "/" +  this.filetype;
+	}
+};
+
+</script>
+</head>
+
+<body onload="start()">
+
+<h1>Generate different Logos from SVG files</h1>
+
+
+<p>Here in this tool I am offering you the option to create your own image files sizes from Logos from SVGs<br/> 
+It is going to offer the following options:</p>
+<ol>
+<li>Choose one of 6 SVG files to begin with</li>
+<li>Choose a size for the images</li>
+<li>Choose to enlargen the canvas size around the image</li> 
+<li>Choose the background color or transparent</li>
+<li>Choose filetype (jpeg or png)</li>
+</ol>
+
+<h2> Choose the Image Type </h2>
+<form action="/action_page.php">
+  	<input type="radio" onclick="changeSrcImg('yuki.svg'),setfname('Yuki')" name="FC">Yuki<br> </input>
+		<input type="radio" onclick="changeSrcImg('yuki-sleep.svg'),setfname('YukiSleep')" name="FC">Yuki Sleeping<br> </input>
+</form>
+
+
+<h2> Choose the height or width of the image </h2>
+<label for="file-select">Choose the resizing type:</label>
+
+<select id="file-select">
+    <option value="cat">Height</option>
+    <option value="dog">Width</option>
+</select>
+<p> Type in the height: <input onkeyup="myFunction(), imagesize()" type="number" id="myNumber" value="250"> </input> 
+<form onclick="resetFormat()">
+    <input type="radio"  name="resolutionType">px</input>
+    <input type="radio"  name="resolutionType">cm</input>
+    <input type="radio"  name="resolutionType">in</input>
+</form>
+</p>     
+
+This is the according image width: <b> <span id="iwidth2"> </span> </b> </li>
+<p>If you want to reset the image, please click here: 
+<b> <button onlick="resetS()"> reset size </button> </b> </p>
+
+<p> Please note that to ensure the correct ratio of the images, it is not possible to type in height and width at the same time</p>
+
+
+<h2> Change Padding around the image </h2>
+<p> Type in the size of Padding</p>
+<input onkeyup="bordering(),imagesize()" type="number" id="myBorder" value="10"><br>
+<button onlick="resetP()"> reset Padding </button>
+
+<h2> Choose the FileType </h2>
+<form>
+  	<input type="radio" onclick="setFileType('.png')" name="FT">save as PNG<br> </input>
+	<input type="radio" onclick="setFileType('.jpeg')" name="FT">save as JPEG<br> </input>
+</form>
+
+<h2> Current Image Properties </h2>
+//TO-DO: Set the filename, file path and in the end: file properties
+<ul>
+<li> Filename: <p id="convertingfile"> Test</p> </li>
+<li> Filepath: <p id="showpath"> Test </p></li>
+<li> Filesize: (shows the size of the file)</li>
+<li> Dimension of the logo without padding </li> 
+	<ul>
+		<li>Width of the Logo*: <b> <span id="iwidth"> </span> </b> </li>
+		<li>Height of the Logo*: <b><span id="iheight"> </span> </b></li>
+	</ul>
+<li> Dimension of the total img
+	<ul>
+		<li>Width of the Image: <b><span id="lwidth"> </span> </b></li>
+		<li>Height of the Image: <b><span id="lheight"> </span> </b></li>
+	</ul>
+	</li>
+</ul>
+
+<h2> Preview the current Image </h2>
+<img id="logo" onresize="imagesize()" height=250 src="Amicido Logo Full Color RGB Final.svg" style="padding: 10px; border: 1px solid black">
+
+
+
+
+
+<script>
+function imagesize() {
+var img = document.getElementById('logo'); 
+//or however you get a handle to the IMG
+document.getElementById('iwidth').innerHTML=img.clientWidth - 2*myBorder.value;
+document.getElementById('iwidth2').innerHTML=img.clientWidth - 2*myBorder.value;
+document.getElementById('iheight').innerHTML=img.clientHeight - 2*myBorder.value;
+document.getElementById('lwidth').innerHTML=img.clientWidth;
+document.getElementById('lheight').innerHTML=img.clientHeight;
+}
+
+//TO-DO: set the reset for the size of the logo
+
+function resetS(){
+	document.getElementById("logo").height = "250 px";
+}
+function setfname(nam){
+	filename[0] = nam;
+}
+
+
+function setFileType(file){
+//make it not appear several times, only once
+	filename[5] = file ;
+}
+
+
+function convertArray(){
+	document.getElementById("convertingfile").innerHTML = filename.fullfilename();
+}
+
+function setpath(){
+	document.getElementById("showpath").innerHTML = filepath.fullpath();
+}
+</script>
+</body>
+</html>

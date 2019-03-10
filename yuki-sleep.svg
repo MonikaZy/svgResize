@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="376px" height="305px" viewBox="0 0 376 305" enable-background="new 0 0 376 305" xml:space="preserve">
+<g>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="4.459" y1="43.3828" x2="100.078" y2="43.3828" gradientTransform="matrix(0.9795 0.2014 -0.2014 0.9795 22.4802 33.2188)">
+		<stop  offset="0" style="stop-color:#1F1F1F"/>
+		<stop  offset="0.6012" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_1_)" points="28.25,27.3 118.75,77.234 60.095,136.638 	"/>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-39.8188" y1="125.0879" x2="44.1789" y2="125.0879" gradientTransform="matrix(-0.9592 0.2826 0.2826 0.9592 277.8083 -32.59)">
+		<stop  offset="0" style="stop-color:#1F1F1F"/>
+		<stop  offset="0.6012" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_2_)" points="325.938,135.714 262.521,81.424 337.237,28.223 	"/>
+	
+		<radialGradient id="SVGID_3_" cx="198.167" cy="199.0957" r="107.2146" gradientTransform="matrix(1 0 0 0.8127 0 37.2973)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#1F1F1F"/>
+		<stop  offset="1" style="stop-color:#FFFFFF"/>
+	</radialGradient>
+	<ellipse fill="url(#SVGID_3_)" cx="198.167" cy="173.054" rx="148.5" ry="122.5"/>
+</g>
+<path fill="#343434" d="M185.5,190.5c3.245-6.623,26.926-6.911,29.5,0c2.13,5.719-13.994,20-13.994,20S182.716,196.182,185.5,190.5z
+	"/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M200.96,209.5c0,21-2.016,28-26.96,28"/>
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M200.674,209.752c0.93,25.082,5.758,27.936,29.039,27.936"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="117" y1="208" x2="45" y2="185.424"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="112" y1="217" x2="40.5" y2="214"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="112" y1="226.25" x2="52.5" y2="238.5"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="283.011" y1="206.582" x2="356.746" y2="190.561"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="287.183" y1="215.994" x2="358.663" y2="219.426"/>
+<line fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" x1="286.352" y1="225.207" x2="344.512" y2="242.75"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M141.667,152.5c0,0-13.333,8.062-24.667,8.06
+	c-19.192-0.004-32.072-8.205-31.083-8.06"/>
+<path fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M242.218,154.638c0,0,13.467,7.74,24.782,7.086
+	c19.16-1.107,26.53-10.187,25.551-9.985"/>
+<path opacity="0.28" fill="#FF4C97" stroke="#000000" stroke-width="2" stroke-miterlimit="10" d="M187.48,236.381
+	c0,0,5.078,18.503,13.48,18.619c7.922,0.109,14.234-16.5,14.234-16.5"/>
+</svg>
