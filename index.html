@@ -15,20 +15,21 @@
 <h1>Generate different Logos from SVG files</h1>
 
 
-<p>Here with this tool I am offering you the option to create your own bitmap imagea in different sizes from SVGs<br/> 
+<p>Here with this tool I am offering the option to create your own bitmap images in different sizes from SVGs<br/> 
 	This micro site offers <ul>
 		<li>Upload of an SVG</li>
 		<li>A preview of the image</li>
 	</ul>
 	The following customization options are available:</p>
 <ol>
-<li> &#10003; Choose one of 2 SVG files to begin with</li>
+<li> &#10003; Upload one file to begin with</li>
+<li> Preview that file on the side</li>
 </ol>
 
 <h2>Upload</h2>
-<form action="/action_page.php">
-  <input type="file" name="pic" accept="audio/*,video/*,image/*">
-  <input type="submit">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
 </form>
 
 <h2>Preview</h2>
